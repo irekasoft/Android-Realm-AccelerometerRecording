@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              tools:context=".MainActivity"
+              android:id="@+id/a"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <TextView
+        android:text="X: Y: Z:"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/accelerometer"/>
+
+    <ListView
+      android:layout_width="wrap_content"
+      android:layout_height="401dp"
+      android:id="@+id/listView"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_weight="0.50"/>
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="export"
+      android:id="@+id/button"
+      android:layout_gravity="center_horizontal"
+      android:onClick="export"/>
+
+</LinearLayout>
